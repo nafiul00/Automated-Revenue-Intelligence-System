@@ -1,0 +1,1640 @@
+{
+  "categories": {
+    "Addon": 166407556.79999998,
+    "Hardware": 192530670.0,
+    "SaaS": 159589303.20000002,
+    "Service": 193055221.2,
+    "Subscription": 203926908.0
+  },
+  "currency": "\u09f3",
+  "metrics": {
+    "avg_order_value": 203446.59,
+    "customer_count": 2000,
+    "orders": 4500,
+    "refund_rate": 22.22,
+    "revenue": 765525900.0,
+    "weekly_growth": 55.59
+  },
+  "raw": {
+    "customers": [
+      {
+        "city": "Robinsonshire",
+        "country": "Saint Barthelemy",
+        "customer_id": 1,
+        "customer_segment": "Enterprise",
+        "email": "jeffreydoyle@hotmail.com",
+        "first_name": "Danielle",
+        "last_name": "Johnson",
+        "phone": "001-819-600-1338x9083",
+        "signup_date": "2024-04-12"
+      },
+      {
+        "city": "Millerport",
+        "country": "Uzbekistan",
+        "customer_id": 2,
+        "customer_segment": "Mid-Market",
+        "email": "jpeterson@bernard.com",
+        "first_name": "Lisa",
+        "last_name": "Smith",
+        "phone": "615-594-0781",
+        "signup_date": "2025-10-08"
+      },
+      {
+        "city": "Nelsonside",
+        "country": "Kyrgyz Republic",
+        "customer_id": 3,
+        "customer_segment": "SMB",
+        "email": "williamsjeremy@galloway-wyatt.com",
+        "first_name": "Christine",
+        "last_name": "Hensley",
+        "phone": "(475)255-3419x2832",
+        "signup_date": "2024-01-12"
+      },
+      {
+        "city": "Coxberg",
+        "country": "Japan",
+        "customer_id": 4,
+        "customer_segment": "Mid-Market",
+        "email": "lydiatrujillo@adams-clark.org",
+        "first_name": "Gabrielle",
+        "last_name": "Cameron",
+        "phone": "001-537-672-4238x849",
+        "signup_date": "2025-04-06"
+      },
+      {
+        "city": "Teresaburgh",
+        "country": "Afghanistan",
+        "customer_id": 5,
+        "customer_segment": "Enterprise",
+        "email": "courtneyconner@carlson-cruz.org",
+        "first_name": "Trevor",
+        "last_name": "Campos",
+        "phone": "848.018.4514x627",
+        "signup_date": "2025-04-03"
+      },
+      {
+        "city": "Cabreraside",
+        "country": "Saint Martin",
+        "customer_id": 6,
+        "customer_segment": "Enterprise",
+        "email": "ericfarmer@hotmail.com",
+        "first_name": "Rita",
+        "last_name": "Harrell",
+        "phone": "001-809-570-1543x03911",
+        "signup_date": "2023-08-19"
+      },
+      {
+        "city": "New Jeffrey",
+        "country": "Mexico",
+        "customer_id": 7,
+        "customer_segment": "SMB",
+        "email": "allison96@hickman.com",
+        "first_name": "David",
+        "last_name": "Alvarez",
+        "phone": "001-465-787-1331x509",
+        "signup_date": "2023-05-26"
+      },
+      {
+        "city": "Gomezchester",
+        "country": "Palestinian Territory",
+        "customer_id": 8,
+        "customer_segment": "SMB",
+        "email": "heathchad@ramirez.com",
+        "first_name": "Jean",
+        "last_name": "Brown",
+        "phone": "+1-299-737-6311",
+        "signup_date": "2025-01-30"
+      },
+      {
+        "city": "East Richard",
+        "country": "Bermuda",
+        "customer_id": 9,
+        "customer_segment": "Enterprise",
+        "email": "powellmatthew@wright.net",
+        "first_name": "Michelle",
+        "last_name": "Brown",
+        "phone": "262.473.1781x080",
+        "signup_date": "2025-02-21"
+      },
+      {
+        "city": "North Susan",
+        "country": "Macao",
+        "customer_id": 10,
+        "customer_segment": "SMB",
+        "email": "nicholasgalloway@house-glover.com",
+        "first_name": "Jason",
+        "last_name": "Morales",
+        "phone": "(872)343-0980x50097",
+        "signup_date": "2023-06-09"
+      },
+      {
+        "city": "Howellshire",
+        "country": "Algeria",
+        "customer_id": 11,
+        "customer_segment": "Mid-Market",
+        "email": "richarddavid@sanchez.biz",
+        "first_name": "Melissa",
+        "last_name": "Jones",
+        "phone": "+1-998-543-5346x24751",
+        "signup_date": "2023-07-10"
+      },
+      {
+        "city": "Lake Angelaview",
+        "country": "Brazil",
+        "customer_id": 12,
+        "customer_segment": "SMB",
+        "email": "sarahibarra@gmail.com",
+        "first_name": "Charles",
+        "last_name": "Lewis",
+        "phone": "(427)849-8084x124",
+        "signup_date": "2024-04-17"
+      },
+      {
+        "city": "New Barry",
+        "country": "Belarus",
+        "customer_id": 13,
+        "customer_segment": "Mid-Market",
+        "email": "william40@walters.com",
+        "first_name": "Cassandra",
+        "last_name": "Robbins",
+        "phone": "5242786801",
+        "signup_date": "2024-08-31"
+      },
+      {
+        "city": "Port Jacqueline",
+        "country": "Ethiopia",
+        "customer_id": 14,
+        "customer_segment": "Enterprise",
+        "email": "parkerrachel@nolan.com",
+        "first_name": "Brandi",
+        "last_name": "Hernandez",
+        "phone": "+1-158-692-3226x02563",
+        "signup_date": "2024-09-21"
+      },
+      {
+        "city": "North Natalieview",
+        "country": "Greenland",
+        "customer_id": 15,
+        "customer_segment": "Mid-Market",
+        "email": "lisastevens@hoover-savage.com",
+        "first_name": "Monica",
+        "last_name": "Garrison",
+        "phone": "3654145868",
+        "signup_date": "2023-11-09"
+      },
+      {
+        "city": "Lake Rachelhaven",
+        "country": "Germany",
+        "customer_id": 16,
+        "customer_segment": "SMB",
+        "email": "carlsonmichael@graham-joyce.com",
+        "first_name": "Beverly",
+        "last_name": "Terrell",
+        "phone": "(934)060-8835x6159",
+        "signup_date": "2024-05-30"
+      },
+      {
+        "city": "Lowehaven",
+        "country": "Kenya",
+        "customer_id": 17,
+        "customer_segment": "Mid-Market",
+        "email": "jamesortega@yahoo.com",
+        "first_name": "Elizabeth",
+        "last_name": "Nguyen",
+        "phone": "+1-299-468-0443x69957",
+        "signup_date": "2025-02-09"
+      },
+      {
+        "city": "Lake Heather",
+        "country": "Turks and Caicos Islands",
+        "customer_id": 18,
+        "customer_segment": "Mid-Market",
+        "email": "campbellelizabeth@rogers.com",
+        "first_name": "Laura",
+        "last_name": "Moyer",
+        "phone": "320.037.9176",
+        "signup_date": "2025-03-13"
+      },
+      {
+        "city": "Colebury",
+        "country": "Samoa",
+        "customer_id": 19,
+        "customer_segment": "SMB",
+        "email": "osbornejeffery@holmes.com",
+        "first_name": "Reginald",
+        "last_name": "Hernandez",
+        "phone": "278.895.7986x872",
+        "signup_date": "2025-10-22"
+      },
+      {
+        "city": "North Robert",
+        "country": "Romania",
+        "customer_id": 20,
+        "customer_segment": "Enterprise",
+        "email": "joshuajones@yahoo.com",
+        "first_name": "Joshua",
+        "last_name": "Strickland",
+        "phone": "455.812.2362",
+        "signup_date": "2024-07-03"
+      },
+      {
+        "city": "South Matthewfurt",
+        "country": "Libyan Arab Jamahiriya",
+        "customer_id": 21,
+        "customer_segment": "Mid-Market",
+        "email": "xprice@shah.org",
+        "first_name": "Amy",
+        "last_name": "Perry",
+        "phone": "(705)466-8893x7346",
+        "signup_date": "2023-10-19"
+      },
+      {
+        "city": "South Andrewside",
+        "country": "Syrian Arab Republic",
+        "customer_id": 22,
+        "customer_segment": "Mid-Market",
+        "email": "qvargas@miller.com",
+        "first_name": "Mary",
+        "last_name": "Calhoun",
+        "phone": "204.653.7556x464",
+        "signup_date": "2023-04-26"
+      },
+      {
+        "city": "Port Loriport",
+        "country": "Netherlands",
+        "customer_id": 23,
+        "customer_segment": "SMB",
+        "email": "websterstefanie@combs.com",
+        "first_name": "Zoe",
+        "last_name": "Bell",
+        "phone": "271.937.4529",
+        "signup_date": "2023-07-22"
+      },
+      {
+        "city": "Caseymouth",
+        "country": "Panama",
+        "customer_id": 24,
+        "customer_segment": "SMB",
+        "email": "mdavid@gmail.com",
+        "first_name": "Beth",
+        "last_name": "Hickman",
+        "phone": "001-314-919-0586",
+        "signup_date": "2023-02-24"
+      },
+      {
+        "city": "Hudsonfurt",
+        "country": "Sao Tome and Principe",
+        "customer_id": 25,
+        "customer_segment": "SMB",
+        "email": "oyu@zimmerman-graham.net",
+        "first_name": "Melissa",
+        "last_name": "Short",
+        "phone": "+1-498-776-9453x1473",
+        "signup_date": "2024-07-11"
+      },
+      {
+        "city": "Westtown",
+        "country": "Oman",
+        "customer_id": 26,
+        "customer_segment": "Mid-Market",
+        "email": "zlewis@peterson-beard.com",
+        "first_name": "Anthony",
+        "last_name": "Rosales",
+        "phone": "+1-083-136-7837",
+        "signup_date": "2023-06-29"
+      },
+      {
+        "city": "Hillshire",
+        "country": "Saint Vincent and the Grenadines",
+        "customer_id": 27,
+        "customer_segment": "SMB",
+        "email": "elizabeth57@schmidt.com",
+        "first_name": "Kelly",
+        "last_name": "Sullivan",
+        "phone": "(744)431-3518x233",
+        "signup_date": "2025-04-29"
+      },
+      {
+        "city": "Petersonton",
+        "country": "Lesotho",
+        "customer_id": 28,
+        "customer_segment": "SMB",
+        "email": "jeremy24@erickson.com",
+        "first_name": "Candice",
+        "last_name": "Hooper",
+        "phone": "0842710947",
+        "signup_date": "2024-03-03"
+      },
+      {
+        "city": "Evansshire",
+        "country": "Korea",
+        "customer_id": 29,
+        "customer_segment": "Enterprise",
+        "email": "kvasquez@parks.com",
+        "first_name": "Shelley",
+        "last_name": "Woods",
+        "phone": "318-699-9386",
+        "signup_date": "2024-12-02"
+      },
+      {
+        "city": "Jacquelinemouth",
+        "country": "Romania",
+        "customer_id": 30,
+        "customer_segment": "SMB",
+        "email": "colleenbaker@moore.net",
+        "first_name": "Kevin",
+        "last_name": "Oliver",
+        "phone": "206-797-4034",
+        "signup_date": "2023-05-26"
+      },
+      {
+        "city": "Kimton",
+        "country": "Macao",
+        "customer_id": 31,
+        "customer_segment": "SMB",
+        "email": "owilson@hernandez.com",
+        "first_name": "Grace",
+        "last_name": "Bradshaw",
+        "phone": "(499)471-7464",
+        "signup_date": "2024-12-07"
+      },
+      {
+        "city": "Baileymouth",
+        "country": "Bermuda",
+        "customer_id": 32,
+        "customer_segment": "Enterprise",
+        "email": "perezemily@matthews.com",
+        "first_name": "Jessica",
+        "last_name": "Munoz",
+        "phone": "001-027-874-2967",
+        "signup_date": "2024-06-17"
+      },
+      {
+        "city": "New Michael",
+        "country": "Austria",
+        "customer_id": 33,
+        "customer_segment": "Enterprise",
+        "email": "ssteele@hotmail.com",
+        "first_name": "Elizabeth",
+        "last_name": "Hodge",
+        "phone": "(807)154-5168x0876",
+        "signup_date": "2025-03-20"
+      },
+      {
+        "city": "Williamview",
+        "country": "Venezuela",
+        "customer_id": 34,
+        "customer_segment": "Mid-Market",
+        "email": "andrea47@washington.com",
+        "first_name": "Colleen",
+        "last_name": "Wolf",
+        "phone": "001-248-086-1317x127",
+        "signup_date": "2024-11-11"
+      },
+      {
+        "city": "Grimesmouth",
+        "country": "Palestinian Territory",
+        "customer_id": 35,
+        "customer_segment": "Mid-Market",
+        "email": "yarnold@weeks.com",
+        "first_name": "Mary",
+        "last_name": "Baird",
+        "phone": "465-840-4499",
+        "signup_date": "2025-05-21"
+      },
+      {
+        "city": "East Wayneshire",
+        "country": "Lithuania",
+        "customer_id": 36,
+        "customer_segment": "SMB",
+        "email": "mcantu@hotmail.com",
+        "first_name": "Todd",
+        "last_name": "Cook",
+        "phone": "963.605.7662",
+        "signup_date": "2024-07-04"
+      },
+      {
+        "city": "Finleyfort",
+        "country": "Timor-Leste",
+        "customer_id": 37,
+        "customer_segment": "Mid-Market",
+        "email": "foxstephen@hotmail.com",
+        "first_name": "Molly",
+        "last_name": "Sawyer",
+        "phone": "(621)745-9615",
+        "signup_date": "2025-05-25"
+      },
+      {
+        "city": "East Gregory",
+        "country": "Isle of Man",
+        "customer_id": 38,
+        "customer_segment": "Mid-Market",
+        "email": "juliehamilton@gmail.com",
+        "first_name": "Barry",
+        "last_name": "Jones",
+        "phone": "001-172-400-5045x56238",
+        "signup_date": "2025-09-08"
+      },
+      {
+        "city": "Jamesfurt",
+        "country": "Tanzania",
+        "customer_id": 39,
+        "customer_segment": "SMB",
+        "email": "jdurham@murray.info",
+        "first_name": "Monica",
+        "last_name": "Harvey",
+        "phone": "074-821-7594x647",
+        "signup_date": "2025-02-24"
+      },
+      {
+        "city": "Lake Colton",
+        "country": "Philippines",
+        "customer_id": 40,
+        "customer_segment": "Enterprise",
+        "email": "victoria40@hotmail.com",
+        "first_name": "Daniel",
+        "last_name": "James",
+        "phone": "(409)097-4395x3394",
+        "signup_date": "2025-10-06"
+      },
+      {
+        "city": "Lindamouth",
+        "country": "San Marino",
+        "customer_id": 41,
+        "customer_segment": "Mid-Market",
+        "email": "rileyjessica@gmail.com",
+        "first_name": "Debbie",
+        "last_name": "Parker",
+        "phone": "562-328-5884x2474",
+        "signup_date": "2023-06-01"
+      },
+      {
+        "city": "Rosebury",
+        "country": "Anguilla",
+        "customer_id": 42,
+        "customer_segment": "SMB",
+        "email": "christopher60@yahoo.com",
+        "first_name": "Donald",
+        "last_name": "Levy",
+        "phone": "+1-175-496-5137",
+        "signup_date": "2025-11-07"
+      },
+      {
+        "city": "Port Tracychester",
+        "country": "Palau",
+        "customer_id": 43,
+        "customer_segment": "SMB",
+        "email": "cwilson@gmail.com",
+        "first_name": "Bryan",
+        "last_name": "Colon",
+        "phone": "711-382-6758x6926",
+        "signup_date": "2024-04-14"
+      },
+      {
+        "city": "Port Anne",
+        "country": "Ecuador",
+        "customer_id": 44,
+        "customer_segment": "Mid-Market",
+        "email": "xsampson@gmail.com",
+        "first_name": "Antonio",
+        "last_name": "Wood",
+        "phone": "+1-585-064-3171x39005",
+        "signup_date": "2023-05-22"
+      },
+      {
+        "city": "West Brian",
+        "country": "Andorra",
+        "customer_id": 45,
+        "customer_segment": "Mid-Market",
+        "email": "markhernandez@smith.com",
+        "first_name": "Maria",
+        "last_name": "Spencer",
+        "phone": "+1-421-020-5395",
+        "signup_date": "2024-11-19"
+      },
+      {
+        "city": "Simmonsville",
+        "country": "Lesotho",
+        "customer_id": 46,
+        "customer_segment": "SMB",
+        "email": "gstrickland@hotmail.com",
+        "first_name": "Alicia",
+        "last_name": "Reese",
+        "phone": "783-908-4700",
+        "signup_date": "2025-03-07"
+      },
+      {
+        "city": "Mariafurt",
+        "country": "Isle of Man",
+        "customer_id": 47,
+        "customer_segment": "Enterprise",
+        "email": "charlene12@weber-richards.com",
+        "first_name": "Jennifer",
+        "last_name": "Wallace",
+        "phone": "(984)789-6118x3673",
+        "signup_date": "2024-11-12"
+      },
+      {
+        "city": "Elizabethchester",
+        "country": "Moldova",
+        "customer_id": 48,
+        "customer_segment": "Enterprise",
+        "email": "nicholas27@gmail.com",
+        "first_name": "Jessica",
+        "last_name": "Edwards",
+        "phone": "116-152-8098",
+        "signup_date": "2024-08-07"
+      },
+      {
+        "city": "Audreychester",
+        "country": "Brazil",
+        "customer_id": 49,
+        "customer_segment": "Enterprise",
+        "email": "schmittcaroline@yahoo.com",
+        "first_name": "Morgan",
+        "last_name": "Pugh",
+        "phone": "983-273-1585",
+        "signup_date": "2025-06-25"
+      },
+      {
+        "city": "West Larry",
+        "country": "Guam",
+        "customer_id": 50,
+        "customer_segment": "SMB",
+        "email": "anthony44@bell-white.com",
+        "first_name": "Terri",
+        "last_name": "Cardenas",
+        "phone": "001-612-018-3667",
+        "signup_date": "2024-06-22"
+      }
+    ],
+    "products": [
+      {
+        "category": "SaaS",
+        "cost_price": 701.45,
+        "is_active": true,
+        "product_id": 1,
+        "product_name": "Force Plus",
+        "unit_price": 807.99
+      },
+      {
+        "category": "SaaS",
+        "cost_price": 477.05,
+        "is_active": true,
+        "product_id": 2,
+        "product_name": "Floor Plus",
+        "unit_price": 492.1
+      },
+      {
+        "category": "SaaS",
+        "cost_price": 631.34,
+        "is_active": true,
+        "product_id": 3,
+        "product_name": "Staff Plus",
+        "unit_price": 675.04
+      },
+      {
+        "category": "Service",
+        "cost_price": 373.61,
+        "is_active": true,
+        "product_id": 4,
+        "product_name": "Foot Pro",
+        "unit_price": 659.54
+      },
+      {
+        "category": "Hardware",
+        "cost_price": 71.58,
+        "is_active": true,
+        "product_id": 5,
+        "product_name": "Oil X",
+        "unit_price": 20.75
+      },
+      {
+        "category": "Service",
+        "cost_price": 637.26,
+        "is_active": true,
+        "product_id": 6,
+        "product_name": "Time Plus",
+        "unit_price": 257.55
+      },
+      {
+        "category": "Service",
+        "cost_price": 50.42,
+        "is_active": true,
+        "product_id": 7,
+        "product_name": "Force Plus",
+        "unit_price": 874.91
+      },
+      {
+        "category": "Service",
+        "cost_price": 356.26,
+        "is_active": true,
+        "product_id": 8,
+        "product_name": "Million X",
+        "unit_price": 162.78
+      },
+      {
+        "category": "SaaS",
+        "cost_price": 527.81,
+        "is_active": true,
+        "product_id": 9,
+        "product_name": "Phone Suite",
+        "unit_price": 679.09
+      },
+      {
+        "category": "Service",
+        "cost_price": 786.27,
+        "is_active": true,
+        "product_id": 10,
+        "product_name": "Chance Suite",
+        "unit_price": 867.18
+      },
+      {
+        "category": "Service",
+        "cost_price": 675.27,
+        "is_active": false,
+        "product_id": 11,
+        "product_name": "Above Suite",
+        "unit_price": 802.18
+      },
+      {
+        "category": "Subscription",
+        "cost_price": 370.53,
+        "is_active": true,
+        "product_id": 12,
+        "product_name": "Likely Pro",
+        "unit_price": 811.55
+      },
+      {
+        "category": "Service",
+        "cost_price": 739.1,
+        "is_active": true,
+        "product_id": 13,
+        "product_name": "Experience Suite",
+        "unit_price": 716.69
+      },
+      {
+        "category": "Hardware",
+        "cost_price": 424.45,
+        "is_active": true,
+        "product_id": 14,
+        "product_name": "Art Suite",
+        "unit_price": 106.05
+      },
+      {
+        "category": "Addon",
+        "cost_price": 778.13,
+        "is_active": false,
+        "product_id": 15,
+        "product_name": "Hit Pro",
+        "unit_price": 329.94
+      },
+      {
+        "category": "SaaS",
+        "cost_price": 747.77,
+        "is_active": true,
+        "product_id": 16,
+        "product_name": "Book X",
+        "unit_price": 444.67
+      },
+      {
+        "category": "Addon",
+        "cost_price": 442.09,
+        "is_active": true,
+        "product_id": 17,
+        "product_name": "Success Pro",
+        "unit_price": 759.51
+      },
+      {
+        "category": "Hardware",
+        "cost_price": 624.92,
+        "is_active": true,
+        "product_id": 18,
+        "product_name": "Should X",
+        "unit_price": 709.65
+      },
+      {
+        "category": "Hardware",
+        "cost_price": 34.97,
+        "is_active": true,
+        "product_id": 19,
+        "product_name": "Than X",
+        "unit_price": 711.49
+      },
+      {
+        "category": "SaaS",
+        "cost_price": 715.65,
+        "is_active": true,
+        "product_id": 20,
+        "product_name": "Rock Suite",
+        "unit_price": 694.86
+      },
+      {
+        "category": "Service",
+        "cost_price": 35.4,
+        "is_active": true,
+        "product_id": 21,
+        "product_name": "Often Plus",
+        "unit_price": 622.8
+      },
+      {
+        "category": "Service",
+        "cost_price": 673.49,
+        "is_active": false,
+        "product_id": 22,
+        "product_name": "Total Suite",
+        "unit_price": 587.61
+      },
+      {
+        "category": "Subscription",
+        "cost_price": 261.93,
+        "is_active": true,
+        "product_id": 23,
+        "product_name": "Man X",
+        "unit_price": 1062.72
+      },
+      {
+        "category": "Subscription",
+        "cost_price": 799.89,
+        "is_active": true,
+        "product_id": 24,
+        "product_name": "Address X",
+        "unit_price": 1095.85
+      },
+      {
+        "category": "SaaS",
+        "cost_price": 570.72,
+        "is_active": true,
+        "product_id": 25,
+        "product_name": "Current Pro",
+        "unit_price": 49.74
+      },
+      {
+        "category": "SaaS",
+        "cost_price": 408.6,
+        "is_active": true,
+        "product_id": 26,
+        "product_name": "Resource X",
+        "unit_price": 605.73
+      },
+      {
+        "category": "Subscription",
+        "cost_price": 480.73,
+        "is_active": true,
+        "product_id": 27,
+        "product_name": "Center X",
+        "unit_price": 411.69
+      },
+      {
+        "category": "Addon",
+        "cost_price": 646.5,
+        "is_active": false,
+        "product_id": 28,
+        "product_name": "Conference Pro",
+        "unit_price": 481.44
+      },
+      {
+        "category": "Addon",
+        "cost_price": 539.43,
+        "is_active": true,
+        "product_id": 29,
+        "product_name": "Board Suite",
+        "unit_price": 699.59
+      },
+      {
+        "category": "Service",
+        "cost_price": 134.24,
+        "is_active": true,
+        "product_id": 30,
+        "product_name": "Seven Pro",
+        "unit_price": 1085.53
+      },
+      {
+        "category": "Addon",
+        "cost_price": 686.07,
+        "is_active": false,
+        "product_id": 31,
+        "product_name": "Reach Suite",
+        "unit_price": 774.78
+      },
+      {
+        "category": "SaaS",
+        "cost_price": 367.62,
+        "is_active": false,
+        "product_id": 32,
+        "product_name": "Live Suite",
+        "unit_price": 118.05
+      },
+      {
+        "category": "Hardware",
+        "cost_price": 110.61,
+        "is_active": true,
+        "product_id": 33,
+        "product_name": "Loss Pro",
+        "unit_price": 311.65
+      },
+      {
+        "category": "SaaS",
+        "cost_price": 351.51,
+        "is_active": true,
+        "product_id": 34,
+        "product_name": "Get Plus",
+        "unit_price": 557.95
+      },
+      {
+        "category": "Addon",
+        "cost_price": 37.39,
+        "is_active": true,
+        "product_id": 35,
+        "product_name": "Power Suite",
+        "unit_price": 1014.36
+      },
+      {
+        "category": "Hardware",
+        "cost_price": 30.2,
+        "is_active": true,
+        "product_id": 36,
+        "product_name": "Population Plus",
+        "unit_price": 765.28
+      },
+      {
+        "category": "Service",
+        "cost_price": 664.02,
+        "is_active": true,
+        "product_id": 37,
+        "product_name": "Arm X",
+        "unit_price": 840.5
+      },
+      {
+        "category": "Subscription",
+        "cost_price": 437.52,
+        "is_active": false,
+        "product_id": 38,
+        "product_name": "Center Suite",
+        "unit_price": 868.42
+      },
+      {
+        "category": "Hardware",
+        "cost_price": 531.07,
+        "is_active": true,
+        "product_id": 39,
+        "product_name": "Guy X",
+        "unit_price": 1135.64
+      },
+      {
+        "category": "Subscription",
+        "cost_price": 763.5,
+        "is_active": true,
+        "product_id": 40,
+        "product_name": "Star Plus",
+        "unit_price": 596.38
+      },
+      {
+        "category": "Subscription",
+        "cost_price": 404.91,
+        "is_active": true,
+        "product_id": 41,
+        "product_name": "Enter Plus",
+        "unit_price": 705.54
+      },
+      {
+        "category": "Addon",
+        "cost_price": 279.65,
+        "is_active": false,
+        "product_id": 42,
+        "product_name": "Smile Pro",
+        "unit_price": 1167.72
+      },
+      {
+        "category": "Addon",
+        "cost_price": 61.68,
+        "is_active": true,
+        "product_id": 43,
+        "product_name": "Watch Pro",
+        "unit_price": 91.81
+      },
+      {
+        "category": "Service",
+        "cost_price": 573.01,
+        "is_active": false,
+        "product_id": 44,
+        "product_name": "Product Suite",
+        "unit_price": 858.37
+      },
+      {
+        "category": "SaaS",
+        "cost_price": 505.53,
+        "is_active": true,
+        "product_id": 45,
+        "product_name": "Picture X",
+        "unit_price": 267.5
+      },
+      {
+        "category": "Hardware",
+        "cost_price": 672.16,
+        "is_active": true,
+        "product_id": 46,
+        "product_name": "Writer Suite",
+        "unit_price": 291.39
+      },
+      {
+        "category": "SaaS",
+        "cost_price": 729.12,
+        "is_active": false,
+        "product_id": 47,
+        "product_name": "Next Suite",
+        "unit_price": 504.04
+      },
+      {
+        "category": "SaaS",
+        "cost_price": 555.18,
+        "is_active": true,
+        "product_id": 48,
+        "product_name": "Effect Pro",
+        "unit_price": 167.56
+      },
+      {
+        "category": "Hardware",
+        "cost_price": 503.72,
+        "is_active": false,
+        "product_id": 49,
+        "product_name": "Painting Pro",
+        "unit_price": 632.26
+      },
+      {
+        "category": "Service",
+        "cost_price": 734.25,
+        "is_active": false,
+        "product_id": 50,
+        "product_name": "Bad Plus",
+        "unit_price": 211.87
+      }
+    ],
+    "refunds": [
+      {
+        "refund_amount": 983.29,
+        "refund_date": "2025-02-10",
+        "refund_id": 1,
+        "refund_reason": "Customer Request",
+        "refund_status": "Processed",
+        "transaction_id": 1855
+      },
+      {
+        "refund_amount": 644.78,
+        "refund_date": "2024-03-07",
+        "refund_id": 2,
+        "refund_reason": "Customer Request",
+        "refund_status": "Processed",
+        "transaction_id": 276
+      },
+      {
+        "refund_amount": 1025.29,
+        "refund_date": "2024-01-27",
+        "refund_id": 3,
+        "refund_reason": "Fraud",
+        "refund_status": "Completed",
+        "transaction_id": 2678
+      },
+      {
+        "refund_amount": 250.93,
+        "refund_date": "2025-05-02",
+        "refund_id": 4,
+        "refund_reason": "Fraud",
+        "refund_status": "Processed",
+        "transaction_id": 2473
+      },
+      {
+        "refund_amount": 895.26,
+        "refund_date": "2024-02-03",
+        "refund_id": 5,
+        "refund_reason": "Fraud",
+        "refund_status": "Approved",
+        "transaction_id": 2583
+      },
+      {
+        "refund_amount": 272.42,
+        "refund_date": "2024-01-29",
+        "refund_id": 6,
+        "refund_reason": "Defective Product",
+        "refund_status": "Approved",
+        "transaction_id": 1591
+      },
+      {
+        "refund_amount": 2846.9,
+        "refund_date": "2024-11-12",
+        "refund_id": 7,
+        "refund_reason": "Fraud",
+        "refund_status": "Completed",
+        "transaction_id": 1007
+      },
+      {
+        "refund_amount": 1188.25,
+        "refund_date": "2025-04-03",
+        "refund_id": 8,
+        "refund_reason": "Defective Product",
+        "refund_status": "Completed",
+        "transaction_id": 2302
+      },
+      {
+        "refund_amount": 876.49,
+        "refund_date": "2024-02-05",
+        "refund_id": 9,
+        "refund_reason": "Defective Product",
+        "refund_status": "Completed",
+        "transaction_id": 3915
+      },
+      {
+        "refund_amount": 999.94,
+        "refund_date": "2024-06-16",
+        "refund_id": 10,
+        "refund_reason": "Defective Product",
+        "refund_status": "Completed",
+        "transaction_id": 3418
+      },
+      {
+        "refund_amount": 324.71,
+        "refund_date": "2025-02-07",
+        "refund_id": 11,
+        "refund_reason": "Billing Error",
+        "refund_status": "Approved",
+        "transaction_id": 732
+      },
+      {
+        "refund_amount": 72.98,
+        "refund_date": "2025-04-01",
+        "refund_id": 12,
+        "refund_reason": "Billing Error",
+        "refund_status": "Completed",
+        "transaction_id": 1833
+      },
+      {
+        "refund_amount": 2112.07,
+        "refund_date": "2023-09-30",
+        "refund_id": 13,
+        "refund_reason": "Customer Request",
+        "refund_status": "Completed",
+        "transaction_id": 1570
+      },
+      {
+        "refund_amount": 548.88,
+        "refund_date": "2025-07-16",
+        "refund_id": 14,
+        "refund_reason": "Billing Error",
+        "refund_status": "Processed",
+        "transaction_id": 14
+      },
+      {
+        "refund_amount": 392.95,
+        "refund_date": "2024-10-23",
+        "refund_id": 15,
+        "refund_reason": "Billing Error",
+        "refund_status": "Processed",
+        "transaction_id": 2669
+      },
+      {
+        "refund_amount": 942.21,
+        "refund_date": "2025-12-26",
+        "refund_id": 16,
+        "refund_reason": "Fraud",
+        "refund_status": "Processed",
+        "transaction_id": 624
+      },
+      {
+        "refund_amount": 279.42,
+        "refund_date": "2025-08-11",
+        "refund_id": 17,
+        "refund_reason": "Customer Request",
+        "refund_status": "Completed",
+        "transaction_id": 1340
+      },
+      {
+        "refund_amount": 1097.01,
+        "refund_date": "2024-05-03",
+        "refund_id": 18,
+        "refund_reason": "Defective Product",
+        "refund_status": "Processed",
+        "transaction_id": 3872
+      },
+      {
+        "refund_amount": 51.14,
+        "refund_date": "2025-05-08",
+        "refund_id": 19,
+        "refund_reason": "Defective Product",
+        "refund_status": "Completed",
+        "transaction_id": 1387
+      },
+      {
+        "refund_amount": 2352.73,
+        "refund_date": "2025-11-12",
+        "refund_id": 20,
+        "refund_reason": "Customer Request",
+        "refund_status": "Processed",
+        "transaction_id": 1686
+      },
+      {
+        "refund_amount": 481.5,
+        "refund_date": "2025-06-06",
+        "refund_id": 21,
+        "refund_reason": "Customer Request",
+        "refund_status": "Processed",
+        "transaction_id": 540
+      },
+      {
+        "refund_amount": 1365.84,
+        "refund_date": "2025-06-28",
+        "refund_id": 22,
+        "refund_reason": "Fraud",
+        "refund_status": "Completed",
+        "transaction_id": 3460
+      },
+      {
+        "refund_amount": 2219.17,
+        "refund_date": "2025-09-03",
+        "refund_id": 23,
+        "refund_reason": "Billing Error",
+        "refund_status": "Completed",
+        "transaction_id": 4051
+      },
+      {
+        "refund_amount": 1561.31,
+        "refund_date": "2025-06-11",
+        "refund_id": 24,
+        "refund_reason": "Customer Request",
+        "refund_status": "Processed",
+        "transaction_id": 2148
+      },
+      {
+        "refund_amount": 1778.24,
+        "refund_date": "2023-11-17",
+        "refund_id": 25,
+        "refund_reason": "Billing Error",
+        "refund_status": "Completed",
+        "transaction_id": 2614
+      },
+      {
+        "refund_amount": 167.24,
+        "refund_date": "2023-11-26",
+        "refund_id": 26,
+        "refund_reason": "Fraud",
+        "refund_status": "Approved",
+        "transaction_id": 3611
+      },
+      {
+        "refund_amount": 1069.56,
+        "refund_date": "2024-10-19",
+        "refund_id": 27,
+        "refund_reason": "Fraud",
+        "refund_status": "Completed",
+        "transaction_id": 3732
+      },
+      {
+        "refund_amount": 111.55,
+        "refund_date": "2025-02-19",
+        "refund_id": 28,
+        "refund_reason": "Fraud",
+        "refund_status": "Processed",
+        "transaction_id": 3860
+      },
+      {
+        "refund_amount": 567.3,
+        "refund_date": "2024-07-14",
+        "refund_id": 29,
+        "refund_reason": "Fraud",
+        "refund_status": "Completed",
+        "transaction_id": 3736
+      },
+      {
+        "refund_amount": 724.56,
+        "refund_date": "2025-10-03",
+        "refund_id": 30,
+        "refund_reason": "Customer Request",
+        "refund_status": "Processed",
+        "transaction_id": 152
+      },
+      {
+        "refund_amount": 2472.31,
+        "refund_date": "2024-09-13",
+        "refund_id": 31,
+        "refund_reason": "Fraud",
+        "refund_status": "Completed",
+        "transaction_id": 3813
+      },
+      {
+        "refund_amount": 549.48,
+        "refund_date": "2024-03-22",
+        "refund_id": 32,
+        "refund_reason": "Billing Error",
+        "refund_status": "Completed",
+        "transaction_id": 2510
+      },
+      {
+        "refund_amount": 2067.48,
+        "refund_date": "2025-10-16",
+        "refund_id": 33,
+        "refund_reason": "Billing Error",
+        "refund_status": "Approved",
+        "transaction_id": 290
+      },
+      {
+        "refund_amount": 757.2,
+        "refund_date": "2024-07-18",
+        "refund_id": 34,
+        "refund_reason": "Defective Product",
+        "refund_status": "Approved",
+        "transaction_id": 3483
+      },
+      {
+        "refund_amount": 3911.95,
+        "refund_date": "2025-04-10",
+        "refund_id": 35,
+        "refund_reason": "Billing Error",
+        "refund_status": "Processed",
+        "transaction_id": 3346
+      },
+      {
+        "refund_amount": 291.09,
+        "refund_date": "2025-08-16",
+        "refund_id": 36,
+        "refund_reason": "Customer Request",
+        "refund_status": "Completed",
+        "transaction_id": 2214
+      },
+      {
+        "refund_amount": 641.13,
+        "refund_date": "2024-11-14",
+        "refund_id": 37,
+        "refund_reason": "Defective Product",
+        "refund_status": "Completed",
+        "transaction_id": 1694
+      },
+      {
+        "refund_amount": 1638.16,
+        "refund_date": "2024-03-30",
+        "refund_id": 38,
+        "refund_reason": "Billing Error",
+        "refund_status": "Processed",
+        "transaction_id": 1004
+      },
+      {
+        "refund_amount": 1229.9,
+        "refund_date": "2025-09-13",
+        "refund_id": 39,
+        "refund_reason": "Customer Request",
+        "refund_status": "Completed",
+        "transaction_id": 2734
+      },
+      {
+        "refund_amount": 3109.53,
+        "refund_date": "2025-10-10",
+        "refund_id": 40,
+        "refund_reason": "Fraud",
+        "refund_status": "Processed",
+        "transaction_id": 3469
+      },
+      {
+        "refund_amount": 679.75,
+        "refund_date": "2025-03-15",
+        "refund_id": 41,
+        "refund_reason": "Defective Product",
+        "refund_status": "Approved",
+        "transaction_id": 3537
+      },
+      {
+        "refund_amount": 1303.92,
+        "refund_date": "2023-09-19",
+        "refund_id": 42,
+        "refund_reason": "Defective Product",
+        "refund_status": "Processed",
+        "transaction_id": 2483
+      },
+      {
+        "refund_amount": 234.48,
+        "refund_date": "2024-11-24",
+        "refund_id": 43,
+        "refund_reason": "Customer Request",
+        "refund_status": "Completed",
+        "transaction_id": 2048
+      },
+      {
+        "refund_amount": 319.32,
+        "refund_date": "2024-01-28",
+        "refund_id": 44,
+        "refund_reason": "Fraud",
+        "refund_status": "Approved",
+        "transaction_id": 6
+      },
+      {
+        "refund_amount": 1836.12,
+        "refund_date": "2024-05-17",
+        "refund_id": 45,
+        "refund_reason": "Fraud",
+        "refund_status": "Completed",
+        "transaction_id": 3930
+      },
+      {
+        "refund_amount": 181.29,
+        "refund_date": "2024-01-21",
+        "refund_id": 46,
+        "refund_reason": "Billing Error",
+        "refund_status": "Processed",
+        "transaction_id": 2509
+      },
+      {
+        "refund_amount": 841.28,
+        "refund_date": "2025-04-25",
+        "refund_id": 47,
+        "refund_reason": "Billing Error",
+        "refund_status": "Approved",
+        "transaction_id": 1956
+      },
+      {
+        "refund_amount": 129.52,
+        "refund_date": "2023-10-31",
+        "refund_id": 48,
+        "refund_reason": "Customer Request",
+        "refund_status": "Completed",
+        "transaction_id": 3273
+      },
+      {
+        "refund_amount": 1184.82,
+        "refund_date": "2025-04-15",
+        "refund_id": 49,
+        "refund_reason": "Fraud",
+        "refund_status": "Completed",
+        "transaction_id": 319
+      },
+      {
+        "refund_amount": 769.23,
+        "refund_date": "2024-11-28",
+        "refund_id": 50,
+        "refund_reason": "Billing Error",
+        "refund_status": "Completed",
+        "transaction_id": 1732
+      }
+    ]
+  },
+  "recent_sales": [
+    {
+      "customer_id": 1679,
+      "discount_rate": 0.1,
+      "net_amount": 38484.0,
+      "payment_method": "Credit Card",
+      "product_id": 1140,
+      "quantity": 1,
+      "region": null,
+      "sales_channel": "Sales Rep",
+      "transaction_date": "2024-01-12",
+      "transaction_id": 6,
+      "unit_price": 356.33
+    },
+    {
+      "customer_id": 1015,
+      "discount_rate": 0.15,
+      "net_amount": 48800.4,
+      "payment_method": "Wallet",
+      "product_id": 401,
+      "quantity": 1,
+      "region": "LATAM",
+      "sales_channel": "Website",
+      "transaction_date": "2024-05-18",
+      "transaction_id": 7,
+      "unit_price": 478.43
+    },
+    {
+      "customer_id": 1094,
+      "discount_rate": 0.05,
+      "net_amount": 107668.8,
+      "payment_method": "Cash",
+      "product_id": 868,
+      "quantity": 2,
+      "region": "APAC",
+      "sales_channel": "Sales Rep",
+      "transaction_date": "2024-02-05",
+      "transaction_id": 8,
+      "unit_price": 472.23
+    },
+    {
+      "customer_id": 147,
+      "discount_rate": 0.05,
+      "net_amount": 620216.4,
+      "payment_method": "Wallet",
+      "product_id": 151,
+      "quantity": 5,
+      "region": null,
+      "sales_channel": "Website",
+      "transaction_date": "2023-10-08",
+      "transaction_id": 9,
+      "unit_price": 1088.1
+    },
+    {
+      "customer_id": 1662,
+      "discount_rate": 0.1,
+      "net_amount": 100941.59999999999,
+      "payment_method": "Wallet",
+      "product_id": 446,
+      "quantity": 2,
+      "region": "APAC",
+      "sales_channel": "Website",
+      "transaction_date": "2025-11-26",
+      "transaction_id": 10,
+      "unit_price": 467.32
+    },
+    {
+      "customer_id": 1850,
+      "discount_rate": 0.1,
+      "net_amount": 506407.20000000007,
+      "payment_method": "Bank Transfer",
+      "product_id": 908,
+      "quantity": 5,
+      "region": "EMEA",
+      "sales_channel": "Sales Rep",
+      "transaction_date": "2024-02-14",
+      "transaction_id": 11,
+      "unit_price": 937.79
+    },
+    {
+      "customer_id": 1942,
+      "discount_rate": 0.0,
+      "net_amount": 141735.6,
+      "payment_method": "Wallet",
+      "product_id": 750,
+      "quantity": 3,
+      "region": null,
+      "sales_channel": "Partner",
+      "transaction_date": "2024-06-11",
+      "transaction_id": 12,
+      "unit_price": 393.71
+    },
+    {
+      "customer_id": 949,
+      "discount_rate": 0.0,
+      "net_amount": 132750.0,
+      "payment_method": "Wallet",
+      "product_id": 1178,
+      "quantity": 5,
+      "region": null,
+      "sales_channel": "Website",
+      "transaction_date": "2025-09-02",
+      "transaction_id": 13,
+      "unit_price": 221.25
+    },
+    {
+      "customer_id": 1533,
+      "discount_rate": 0.1,
+      "net_amount": 87142.8,
+      "payment_method": "Credit Card",
+      "product_id": 1147,
+      "quantity": 1,
+      "region": "LATAM",
+      "sales_channel": "Marketplace",
+      "transaction_date": "2025-07-09",
+      "transaction_id": 14,
+      "unit_price": 806.88
+    },
+    {
+      "customer_id": 363,
+      "discount_rate": 0.15,
+      "net_amount": 292479.6,
+      "payment_method": "Cash",
+      "product_id": 1017,
+      "quantity": 5,
+      "region": "LATAM",
+      "sales_channel": "Sales Rep",
+      "transaction_date": "2025-11-15",
+      "transaction_id": 15,
+      "unit_price": 573.49
+    }
+  ],
+  "regions": {
+    "APAC": 227788875.6,
+    "EMEA": 226800818.4,
+    "LATAM": 224379698.4
+  },
+  "segments": {
+    "Enterprise": 663,
+    "Mid-Market": 699,
+    "SMB": 638
+  },
+  "trends": [
+    {
+      "net_amount": 1641753.5999999999,
+      "transaction_date": "2026-01-07"
+    },
+    {
+      "net_amount": 166087.19999999998,
+      "transaction_date": "2026-01-08"
+    },
+    {
+      "net_amount": 449835.60000000003,
+      "transaction_date": "2026-01-09"
+    },
+    {
+      "net_amount": 556674.0000000001,
+      "transaction_date": "2026-01-10"
+    },
+    {
+      "net_amount": 1372263.6,
+      "transaction_date": "2026-01-11"
+    },
+    {
+      "net_amount": 305329.19999999995,
+      "transaction_date": "2026-01-12"
+    },
+    {
+      "net_amount": 914097.6,
+      "transaction_date": "2026-01-13"
+    },
+    {
+      "net_amount": 1013708.3999999999,
+      "transaction_date": "2026-01-14"
+    },
+    {
+      "net_amount": 1090557.5999999999,
+      "transaction_date": "2026-01-15"
+    },
+    {
+      "net_amount": 701925.6,
+      "transaction_date": "2026-01-16"
+    },
+    {
+      "net_amount": 231076.8,
+      "transaction_date": "2026-01-17"
+    },
+    {
+      "net_amount": 563768.3999999999,
+      "transaction_date": "2026-01-18"
+    },
+    {
+      "net_amount": 963949.2,
+      "transaction_date": "2026-01-19"
+    },
+    {
+      "net_amount": 1780141.2,
+      "transaction_date": "2026-01-20"
+    },
+    {
+      "net_amount": 336044.39999999997,
+      "transaction_date": "2026-01-21"
+    },
+    {
+      "net_amount": 377524.8,
+      "transaction_date": "2026-01-22"
+    },
+    {
+      "net_amount": 977380.8,
+      "transaction_date": "2026-01-23"
+    },
+    {
+      "net_amount": 323384.39999999997,
+      "transaction_date": "2026-01-24"
+    },
+    {
+      "net_amount": 1011369.6,
+      "transaction_date": "2026-01-25"
+    },
+    {
+      "net_amount": 1447106.4000000001,
+      "transaction_date": "2026-01-26"
+    },
+    {
+      "net_amount": 1101432.0,
+      "transaction_date": "2026-01-27"
+    },
+    {
+      "net_amount": 884158.7999999999,
+      "transaction_date": "2026-01-28"
+    },
+    {
+      "net_amount": 924061.2000000001,
+      "transaction_date": "2026-01-29"
+    },
+    {
+      "net_amount": 915918.0,
+      "transaction_date": "2026-01-30"
+    },
+    {
+      "net_amount": 1472511.6,
+      "transaction_date": "2026-01-31"
+    },
+    {
+      "net_amount": 737480.4,
+      "transaction_date": "2026-02-01"
+    },
+    {
+      "net_amount": 1578896.4000000001,
+      "transaction_date": "2026-02-02"
+    },
+    {
+      "net_amount": 2080561.1999999997,
+      "transaction_date": "2026-02-03"
+    },
+    {
+      "net_amount": 2423452.8,
+      "transaction_date": "2026-02-04"
+    },
+    {
+      "net_amount": 1167003.5999999999,
+      "transaction_date": "2026-02-05"
+    }
+  ]
+}

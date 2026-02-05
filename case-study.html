@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIS PRO v2 | Executive Revenue Intelligence Case Study</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lexend:wght@400;700;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <!-- Animation Stack: GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --bg: #020617;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: #f1f5f9;
+            overflow-x: hidden;
+            letter-spacing: -0.01em;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-heading {
+            font-family: 'Lexend', sans-serif;
+        }
+
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #fff 0%, #6366f1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-bg {
+            background-image: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 50%);
+        }
+
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            transition: all 0.5s ease;
+        }
+
+        .image-container:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            transform: translateY(-5px);
+        }
+
+        .image-container img {
+            transition: scale 0.7s ease;
+        }
+
+        .image-container:hover img {
+            scale: 1.05;
+        }
+
+        .step-card:hover .step-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        @keyframes scan {
+            0% {
+                top: 0;
+            }
+
+            100% {
+                top: 100%;
+            }
+        }
+
+        .scanner::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--primary);
+            box-shadow: 0 0 15px var(--primary);
+            animation: scan 3s linear infinite;
+            z-index: 10;
+        }
+
+        /* Scroll Progress Bar */
+        #progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(to right, #6366f1, #a855f7);
+            z-index: 200;
+            width: 0%;
+        }
+
+        .parallax-target {
+            will-change: transform;
+        }
+    </style>
+</head>
+
+<body class="selection:bg-indigo-500/30">
+
+    <div id="progress-bar"></div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-[100] transition-all duration-300 transform" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="h-8 w-8 bg-indigo-600 rounded-lg flex items-center justify-center font-black italic">A</div>
+                <span class="font-black text-xl uppercase tracking-tighter">ARIS <span
+                        class="text-indigo-500 italic">PRO v2</span></span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-[11px] font-black uppercase tracking-[0.2em] opacity-60">
+                <a href="#problem" class="hover:text-indigo-400 transition-colors">The Challenge</a>
+                <a href="#architecture" class="hover:text-indigo-400 transition-colors">Architecture</a>
+                <a href="#dashboards" class="hover:text-indigo-400 transition-colors">Interface</a>
+                <a href="#automation" class="hover:text-indigo-400 transition-colors">Automation</a>
+                <a href="#results" class="hover:text-indigo-400 transition-colors">Outcomes</a>
+            </div>
+            <a href="mailto:contact@example.com"
+                class="bg-white text-black px-6 py-2.5 rounded-full text-[11px] font-bold uppercase tracking-widest hover:bg-slate-200 transition-all active:scale-95 shadow-xl shadow-white/5">
+                Request Audit
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen relative flex items-center justify-center pt-20 overflow-hidden hero-bg">
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8">
+                    <div class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></div>
+                    <span class="text-[10px] font-black uppercase tracking-[0.2em] text-indigo-400">System Version 2.4
+                        Active</span>
+                </div>
+                <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight mb-8 leading-[1] uppercase text-gradient">
+                    Intelligent<br>Revenue Ops
+                </h1>
+                <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-12 font-medium">
+                    Transforming fragmented business signals into absolute executive clarity through deep automation, AI
+                    orchestration, and secure data aggregation.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#problem"
+                        class="bg-indigo-600 hover:bg-indigo-700 text-white px-10 py-5 rounded-[2rem] font-black uppercase text-xs tracking-[0.2em] shadow-2xl shadow-indigo-600/30 transition-all active:scale-95 flex items-center gap-2">
+                        Explore Ecosystem <i data-lucide="arrow-down-right" class="h-4 w-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Mockup -->
+            <div class="mt-20 relative max-w-5xl mx-auto parallax-target" id="hero-mockup">
+                <div class="image-container scanner">
+                    <img src="./For%20Portfolio/1.png" alt="ARIS Dashboard Interface" class="w-full h-auto">
+                </div>
+                <!-- Floaties -->
+                <div class="absolute -top-10 -left-10 glass p-6 rounded-3xl hidden lg:block animate-bounce shadow-2xl"
+                    style="animation-duration: 4s;">
+                    <div class="text-[10px] font-black uppercase text-indigo-400 mb-1">Live Revenue Stream</div>
+                    <div class="text-2xl font-black tracking-tighter">৳14.2M</div>
+                </div>
+                <div
+                    class="absolute -bottom-6 -right-10 glass p-6 rounded-3xl hidden lg:block animate-pulse shadow-2xl">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2 bg-emerald-500/10 rounded-xl text-emerald-500"><i data-lucide="shield-check"
+                                class="h-5 w-5"></i></div>
+                        <div>
+                            <div class="text-[10px] font-black uppercase text-slate-400">Audit Status</div>
+                            <div class="text-xs font-black uppercase tracking-widest text-emerald-400">Verified</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="py-32 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div data-aos="fade-right">
+                    <p class="text-[10px] font-black uppercase tracking-[0.5em] text-indigo-500 mb-6 font-mono">
+                        _The_Conflict</p>
+                    <h2 class="text-4xl md:text-5xl font-black uppercase italic tracking-tighter mb-8 leading-none">The
+                        Fragmentation<br>of Truth</h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-6 group">
+                            <div
+                                class="h-12 w-12 shrink-0 rounded-2xl glass flex items-center justify-center text-rose-500 group-hover:scale-110 transition-transform">
+                                <i data-lucide="alert-triangle" class="h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-black uppercase italic tracking-tight mb-2">Excel Fatigue</h3>
+                                <p class="text-slate-500 text-sm leading-relaxed">Manual data entry from multiple
+                                    Stripe, Shopify, and local bank feeds leading to constant human error and 40+ hours
+                                    of wasted executive time Monthly.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 group">
+                            <div
+                                class="h-12 w-12 shrink-0 rounded-2xl glass flex items-center justify-center text-amber-500 group-hover:scale-110 transition-transform">
+                                <i data-lucide="clock" class="h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-black uppercase italic tracking-tight mb-2">Lagging Indicators
+                                </h3>
+                                <p class="text-slate-500 text-sm leading-relaxed">Decisions made on 7-day-old data.
+                                    Revenue signals are lost in translation between operational siloes and executive
+                                    boards.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 group">
+                            <div
+                                class="h-12 w-12 shrink-0 rounded-2xl glass flex items-center justify-center text-indigo-400 group-hover:scale-110 transition-transform">
+                                <i data-lucide="lock" class="h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-black uppercase italic tracking-tight mb-2">Security Gaps</h3>
+                                <p class="text-slate-500 text-sm leading-relaxed">Lack of verifiable audit trails and
+                                    role-based access to sensitive financial KPIs, exposing the business to internal and
+                                    external risks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative" data-aos="fade-left">
+                    <div class="image-container rotate-1 grayscale hover:grayscale-0 transition-all">
+                        <img src="./For%20Portfolio/5.png" alt="Data Fragmentation Chaos" class="w-full opacity-80">
+                        <div class="absolute inset-0 bg-indigo-500/10 mix-blend-multiply"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-32 bg-indigo-600">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div data-aos="zoom-in">
+                <h2 class="text-5xl md:text-7xl font-black uppercase italic tracking-tighter text-white mb-8">The
+                    Autonomous<br>Intelligence Solution</h2>
+                <p class="text-xl text-indigo-100 max-w-3xl mx-auto mb-16 font-medium">
+                    We engineered a fully integrated revenue stack that ingests, cleanses, and presents data in
+                    real-time, removing the "Reporting Human" from the critical path.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <!-- Ingestion -->
+                    <div
+                        class="bg-white/10 backdrop-blur-md p-8 rounded-[2.5rem] text-left border border-white/10 step-card hover:bg-white/20 transition-all">
+                        <div
+                            class="h-12 w-12 rounded-2xl bg-white text-indigo-600 flex items-center justify-center mb-6 step-icon transition-transform duration-500">
+                            <i data-lucide="arrow-down-to-line" class="h-6 w-6"></i>
+                        </div>
+                        <h4 class="text-lg font-black uppercase italic text-white mb-2 tracking-tight">Ingestion</h4>
+                        <p
+                            class="text-indigo-100 text-xs font-bold leading-relaxed opacity-80 uppercase tracking-tighter">
+                            Automated API & Excel hooks</p>
+                    </div>
+                    <!-- Orchestration -->
+                    <div
+                        class="bg-white/10 backdrop-blur-md p-8 rounded-[2.5rem] text-left border border-white/10 step-card hover:bg-white/20 transition-all">
+                        <div
+                            class="h-12 w-12 rounded-2xl bg-white text-indigo-600 flex items-center justify-center mb-6 step-icon transition-transform duration-500">
+                            <i data-lucide="activity" class="h-6 w-6"></i>
+                        </div>
+                        <h4 class="text-lg font-black uppercase italic text-white mb-2 tracking-tight">Orchestration
+                        </h4>
+                        <p
+                            class="text-indigo-100 text-xs font-bold leading-relaxed opacity-80 uppercase tracking-tighter">
+                            n8n workflow engine</p>
+                    </div>
+                    <!-- Analytics -->
+                    <div
+                        class="bg-white/10 backdrop-blur-md p-8 rounded-[2.5rem] text-left border border-white/10 step-card hover:bg-white/20 transition-all">
+                        <div
+                            class="h-12 w-12 rounded-2xl bg-white text-indigo-600 flex items-center justify-center mb-6 step-icon transition-transform duration-500">
+                            <i data-lucide="cpu" class="h-6 w-6"></i>
+                        </div>
+                        <h4 class="text-lg font-black uppercase italic text-white mb-2 tracking-tight">Analytics</h4>
+                        <p
+                            class="text-indigo-100 text-xs font-bold leading-relaxed opacity-80 uppercase tracking-tighter">
+                            Python-powered insights</p>
+                    </div>
+                    <!-- Visualization -->
+                    <div
+                        class="bg-white/10 backdrop-blur-md p-8 rounded-[2.5rem] text-left border border-white/10 step-card hover:bg-white/20 transition-all">
+                        <div
+                            class="h-12 w-12 rounded-2xl bg-white text-indigo-600 flex items-center justify-center mb-6 step-icon transition-transform duration-500">
+                            <i data-lucide="layout" class="h-6 w-6"></i>
+                        </div>
+                        <h4 class="text-lg font-black uppercase italic text-white mb-2 tracking-tight">Visualization
+                        </h4>
+                        <p
+                            class="text-indigo-100 text-xs font-bold leading-relaxed opacity-80 uppercase tracking-tighter">
+                            Persona-driven UI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="py-32 bg-slate-950 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <p class="text-[10px] font-black uppercase tracking-[0.5em] text-indigo-500 mb-6 font-mono">
+                    01_The_Blueprint</p>
+                <h2
+                    class="text-4xl md:text-5xl font-black uppercase italic tracking-tighter mb-4 leading-none text-gradient uppercase">
+                    System Architecture</h2>
+                <p
+                    class="text-slate-500 max-w-2xl mx-auto uppercase text-[10px] font-black tracking-widest leading-relaxed">
+                    Explaining the complex end-to-end flow from raw data ingestion to executive-level visualization
+                    nodes.</p>
+            </div>
+
+            <div class="relative group" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="image-container shadow-2xl shadow-indigo-500/10">
+                    <img src="./For%20Portfolio/4.png" alt="System Management Engine" class="w-full">
+                </div>
+
+                <!-- Diagram Overlays -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-center">
+                    <div class="space-y-4">
+                        <h5 class="text-indigo-400 font-black uppercase italic tracking-widest text-xs">Edge Ingestion
+                        </h5>
+                        <p class="text-xs text-slate-500 uppercase tracking-tighter font-black opacity-60">Connected
+                            endpoints for Stripe, Shopify, and Internal ERP data streams.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h5 class="text-white font-black uppercase italic tracking-widest text-xs">Central Proxy Hub
+                        </h5>
+                        <p class="text-xs text-slate-500 uppercase tracking-tighter font-black opacity-60">n8n
+                            Orchestration kernel processing 14k+ daily revenue events.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h5 class="text-indigo-400 font-black uppercase italic tracking-widest text-xs">Insight
+                            Synthesis</h5>
+                        <p class="text-xs text-slate-500 uppercase tracking-tighter font-black opacity-60">Python
+                            analytics kernels generating real-time anomaly alerts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Role Based Dashboards -->
+    <section id="dashboards" class="py-32 relative hero-bg">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="relative order-2 lg:order-1" data-aos="fade-right">
+                    <div class="image-container border-indigo-500/20 shadow-indigo-500/20 shadow-2xl">
+                        <img src="./For%20Portfolio/2.png" alt="Growth Vision Dashboard" class="w-full">
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2" data-aos="fade-left">
+                    <p class="text-[10px] font-black uppercase tracking-[0.5em] text-indigo-500 mb-6 font-mono">
+                        02_The_Interface</p>
+                    <h2 class="text-4xl md:text-5xl font-black uppercase italic tracking-tighter mb-8 leading-none">
+                        Role-Based Intelligence</h2>
+                    <p class="text-slate-400 mb-12 font-medium">One system, 6 personalized realities. We built unique
+                        dashboard environments for every stakeholder in the organization.</p>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div
+                            class="p-6 rounded-3xl glass hover:border-indigo-500/40 transition-all border border-white/5 active:scale-95 cursor-pointer">
+                            <div
+                                class="text-[9px] font-black text-indigo-400 uppercase tracking-widest mb-1 underline decoration-indigo-500/30">
+                                CEO</div>
+                            <div class="text-base font-black uppercase italic text-white">Strategic Vision</div>
+                        </div>
+                        <div
+                            class="p-6 rounded-3xl glass hover:border-indigo-500/40 transition-all border border-white/5 active:scale-95 cursor-pointer">
+                            <div
+                                class="text-[9px] font-black text-indigo-400 uppercase tracking-widest mb-1 underline decoration-indigo-500/30">
+                                CFO</div>
+                            <div class="text-base font-black uppercase italic text-white">Financial Depth</div>
+                        </div>
+                        <div
+                            class="p-6 rounded-3xl glass hover:border-indigo-500/40 transition-all border border-white/5 active:scale-95 cursor-pointer">
+                            <div
+                                class="text-[9px] font-black text-indigo-400 uppercase tracking-widest mb-1 underline decoration-indigo-500/30">
+                                Admin</div>
+                            <div class="text-base font-black uppercase italic text-white">System Health</div>
+                        </div>
+                        <div
+                            class="p-6 rounded-3xl glass hover:border-indigo-500/40 transition-all border border-white/5 active:scale-95 cursor-pointer">
+                            <div
+                                class="text-[9px] font-black text-indigo-400 uppercase tracking-widest mb-1 underline decoration-indigo-500/30">
+                                C-FOUNDER</div>
+                            <div class="text-base font-black uppercase italic text-white">Growth Trajectory</div>
+                        </div>
+                        <div
+                            class="p-6 rounded-3xl glass hover:border-indigo-500/40 transition-all border border-white/5 active:scale-95 cursor-pointer">
+                            <div
+                                class="text-[9px] font-black text-indigo-400 uppercase tracking-widest mb-1 underline decoration-indigo-500/30">
+                                Manager</div>
+                            <div class="text-base font-black uppercase italic text-white">Ops Performance</div>
+                        </div>
+                        <div
+                            class="p-6 rounded-3xl glass hover:border-indigo-500/40 transition-all border border-white/5 active:scale-95 cursor-pointer">
+                            <div
+                                class="text-[9px] font-black text-indigo-400 uppercase tracking-widest mb-1 underline decoration-indigo-500/30">
+                                Employee</div>
+                            <div class="text-base font-black uppercase italic text-white">Task Execution</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automation & Security -->
+    <section id="automation" class="py-32 bg-slate-900 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h2 class="text-4xl font-extrabold uppercase tracking-tight text-white mb-4">Automation & Hardened
+                    Security</h2>
+                <p class="text-slate-500 uppercase text-[10px] font-bold tracking-widest tracking-[0.3em]">Precision
+                    engineering for uncompromising data protection.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="grid grid-cols-2 gap-4 h-80">
+                        <div class="image-container overflow-hidden">
+                            <img src="./For%20Portfolio/Auto1.png" alt="Core Automation Logic"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="image-container overflow-hidden">
+                            <img src="./For%20Portfolio/Auto%202.png" alt="AI Agent Workflow"
+                                class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="glass p-10 rounded-[2.5rem] border-white/10 group overflow-hidden relative">
+                        <div class="relative z-10">
+                            <h3 class="text-2xl font-black uppercase italic mb-4 text-indigo-400">Workflow Orchestration
+                            </h3>
+                            <ul class="space-y-4 text-sm text-slate-400 font-bold uppercase tracking-tighter">
+                                <li class="flex items-center gap-3">
+                                    <div class="h-1.5 w-1.5 rounded-full bg-indigo-500"></div> n8n automated ingestion
+                                    hooks
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <div class="h-1.5 w-1.5 rounded-full bg-indigo-500"></div> Python-integrated anomaly
+                                    scanning
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <div class="h-1.5 w-1.5 rounded-full bg-indigo-500"></div> Real-time Slack/Email
+                                    executive pings
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="grid grid-cols-2 gap-4 h-80">
+                        <div class="image-container overflow-hidden">
+                            <img src="./For%20Portfolio/6.png" alt="Audit Registry" class="w-full h-full object-cover">
+                        </div>
+                        <div class="image-container overflow-hidden">
+                            <img src="./For%20Portfolio/7.png" alt="Security Identifiers"
+                                class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="glass p-10 rounded-[2.5rem] border-white/10 group overflow-hidden relative">
+                        <div class="relative z-10">
+                            <h3 class="text-2xl font-bold uppercase mb-4 text-emerald-400">Security & Integrity</h3>
+                            <ul class="space-y-4 text-sm text-slate-400 font-medium uppercase tracking-tight">
+                                <li class="flex items-center gap-3">
+                                    <div class="h-1.5 w-1.5 rounded-full bg-emerald-500"></div> FIPS-140-2 Compliance
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <div class="h-1.5 w-1.5 rounded-full bg-emerald-500"></div> Verifiable Ledger Hashes
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <div class="h-1.5 w-1.5 rounded-full bg-emerald-500"></div> Identity Matrix MFA
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="py-32 relative bg-indigo-600 overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20">
+        </div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-5xl md:text-7xl font-black uppercase italic tracking-tighter text-white mb-12">
+                        Mission Critical<br>Outcomes</h2>
+
+                    <div class="grid grid-cols-1 gap-6">
+                        <div
+                            class="flex items-center gap-8 p-10 rounded-[2.5rem] bg-black/20 backdrop-blur-md border border-white/10 group hover:bg-black/30 transition-all active:scale-[0.98]">
+                            <div
+                                class="text-6xl font-black italic text-white tracking-tighter group-hover:scale-110 transition-transform">
+                                90%</div>
+                            <div>
+                                <div class="text-lg font-black uppercase italic text-white tracking-tight">Manual Report
+                                    Reduction</div>
+                                <p class="text-indigo-100 text-xs font-medium italic opacity-70">Removing 60+ man-hours
+                                    of manual data aggregation per month.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-8 p-10 rounded-[2.5rem] bg-black/20 backdrop-blur-md border border-white/10 group hover:bg-black/30 transition-all active:scale-[0.98]">
+                            <div
+                                class="text-6xl font-black italic text-white tracking-tighter group-hover:scale-110 transition-transform">
+                                0.0s</div>
+                            <div>
+                                <div class="text-lg font-black uppercase italic text-white tracking-tight">Latency
+                                    Decision Loop</div>
+                                <p class="text-indigo-100 text-xs font-medium italic opacity-70">Live revenue
+                                    visualization vs traditional 7-day reporting delays.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-8 p-10 rounded-[2.5rem] bg-black/20 backdrop-blur-md border border-white/10 group hover:bg-black/30 transition-all active:scale-[0.98]">
+                            <div
+                                class="text-6xl font-black italic text-white tracking-tighter group-hover:scale-110 transition-transform">
+                                100%</div>
+                            <div>
+                                <div class="text-lg font-black uppercase italic text-white tracking-tight">Audit
+                                    Integrity Score</div>
+                                <p class="text-indigo-100 text-xs font-medium italic opacity-70">System-wide hash
+                                    verification for every financial entry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative" data-aos="fade-left">
+                    <div class="image-container border-white/20 shadow-2xl">
+                        <img src="./For%20Portfolio/3.png" alt="Revenue Analysis Outcome" class="w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA / Footer -->
+    <footer class="py-40 bg-slate-950 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <div data-aos="zoom-out">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 border-indigo-500/20">
+                    <span
+                        class="text-[10px] font-black uppercase tracking-[0.5em] text-indigo-400 underline decoration-indigo-500/40 underline-offset-4">Connect
+                        with the Creator</span>
+                </div>
+                <h2
+                    class="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-12 leading-none text-gradient">
+                    I Design Systems<br>Executives Trust.
+                </h2>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <a href="mailto:contact@example.com"
+                        class="bg-indigo-600 hover:bg-indigo-700 text-white px-12 py-6 rounded-[2.5rem] font-bold uppercase text-xs tracking-[0.3em] shadow-2xl shadow-indigo-600/40 transition-all active:scale-95">
+                        Inquire for Implementation
+                    </a>
+                    <a href="#"
+                        class="glass hover:bg-white hover:text-black text-white px-12 py-6 rounded-[2.5rem] font-bold uppercase text-xs tracking-[0.3em] transition-all active:scale-95 border border-white/10">
+                        Strategic Roadmaps
+                    </a>
+                </div>
+                <div
+                    class="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-8 text-[10px] font-black uppercase tracking-widest text-slate-600 italic">
+                    <div>Powered by ARIS Intelligence Kernel</div>
+                    <div>&copy; 2026 XYZ Company LTD Case Study</div>
+                    <div>Verifiable_Build_ID: XYZ-81729-PRO</div>
+                </div>
+            </div>
+        </div>
+        <!-- BG Gradients -->
+        <div class="absolute -bottom-40 -left-40 h-80 w-80 bg-indigo-600/10 blur-[120px] rounded-full"></div>
+        <div class="absolute -bottom-40 -right-40 h-80 w-80 bg-purple-600/10 blur-[120px] rounded-full"></div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Init AOS
+        AOS.init({
+            once: true,
+            duration: 800,
+            easing: 'ease-out-cubic'
+        });
+
+        // Init Lucide
+        lucide.createIcons();
+
+        // GSAP Plugins
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Init Lenis (Smooth Scroll - 120fps feel)
+        const lenis = new Lenis({
+            duration: 1.5,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            direction: 'vertical',
+            gestureDirection: 'vertical',
+            smoothHover: true,
+            smoothTouch: false,
+            wheelMultiplier: 1.1,
+            touchMultiplier: 2,
+            infinite: false,
+        })
+
+        // Connect Lenis to ScrollTrigger
+        lenis.on('scroll', ScrollTrigger.update)
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+
+        // Scroll Progress
+        gsap.to('#progress-bar', {
+            width: '100%',
+            ease: 'none',
+            scrollTrigger: {
+                trigger: 'body',
+                start: 'top top',
+                end: 'bottom bottom',
+                scrub: 0.3
+            }
+        });
+
+        // Hero Parallax
+        gsap.to('#hero-mockup', {
+            y: -100,
+            scale: 1.05,
+            rotateX: 5,
+            scrollTrigger: {
+                trigger: '#hero-mockup',
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: 1
+            }
+        });
+
+        // Section Titles Reveal
+        gsap.utils.toArray('h2').forEach(heading => {
+            gsap.from(heading, {
+                y: 50,
+                opacity: 0,
+                duration: 1,
+                ease: 'power3.out',
+                scrollTrigger: {
+                    trigger: heading,
+                    start: 'top 90%',
+                }
+            });
+        });
+
+        // Image Container Parallax
+        gsap.utils.toArray('.image-container').forEach(container => {
+            const img = container.querySelector('img');
+            gsap.fromTo(img,
+                { y: -30 },
+                {
+                    y: 30,
+                    ease: 'none',
+                    scrollTrigger: {
+                        trigger: container,
+                        scrub: true
+                    }
+                }
+            );
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function () {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('glass', 'py-3', 'shadow-2xl');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.remove('glass', 'py-3', 'shadow-2xl');
+                nav.classList.add('py-4');
+            }
+        });
+    </script>
+</body>
+
+</html>
