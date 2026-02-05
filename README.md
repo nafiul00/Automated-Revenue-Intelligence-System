@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Automated Revenue Intelligence System
 
-## Getting Started
+## Overview
+The Automated Revenue Intelligence System is a **portfolio-ready, enterprise-grade platform** designed to transform scattered business data into actionable insights. It demonstrates automation, analytics, and BI capabilities through a professional, role-based dashboard system.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Key Features
+- **Automated Data Ingestion:** Collects data from Excel files and APIs using n8n workflows.
+- **Revenue Aggregation & Forecasting:** Processes data via Python analytics and SQL databases to generate KPIs, trends, and predictions.
+- **Role-Based Dashboards:** Custom dashboards for Employees, Managers, Admins, CFOs, CEOs, and Founders with tailored insights.
+- **Alerts & Executive Reporting:** Automated notifications for anomalies and weekly reports in Excel/PDF format.
+- **Security:** Demonstrates JWT & OAuth-based authentication, Role-Based Access Control (RBAC), and audit logging (simulated for portfolio purposes).
+- **Visual BI:** Clean, interactive charts and KPI cards to simulate executive decision-making dashboards.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
+- **Automation & Workflow:** n8n
+- **Data & Analytics:** SQL (PostgreSQL/MySQL), Python (Pandas, NumPy), Excel
+- **Business Intelligence:** Power BI, Metabase, Looker Studio
+- **Frontend (Portfolio Simulation):** HTML5, Tailwind CSS, React (optional for interactivity)
+- **Security:** JWT, OAuth 2.0, RBAC
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Purpose
+This project is a **professional showcase** for portfolio purposes, demonstrating expertise in **data automation, analytics, business intelligence, and secure workflow architecture**. All data and authentication are **simulated** for demonstration.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Screenshots / Visuals
+Include images of:
+- System Architecture
+- Role-Based Dashboards
+- n8n Workflows
+- Analytics & KPIs
+- Security and Audit Logs
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Author
+**Nafiul Islam** – Data Automation & Business Intelligence Architect
